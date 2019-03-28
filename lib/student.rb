@@ -28,7 +28,7 @@ class Student
   end
 
   def self.all
-    @@all << self   
+    @@all 
   end
 end
 
