@@ -34,7 +34,6 @@ class Scraper
     :github => social_urls.find { |s| s.include?('github') },
     :bio => doc.css(".description-holder p").text, :profile_quote => doc.css(".profile-quote").text, 
     }
-    binding.pry 
     my_hash.delete_if {|key, value| value == nil }
   end
 
